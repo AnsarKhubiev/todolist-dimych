@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todolist-dimych/static/css/main.bbb55728.css",
+    "main.js": "/todolist-dimych/static/js/main.a2bbd005.js",
+    "static/js/453.b8d62a29.chunk.js": "/todolist-dimych/static/js/453.b8d62a29.chunk.js",
+    "index.html": "/todolist-dimych/index.html",
+    "main.bbb55728.css.map": "/todolist-dimych/static/css/main.bbb55728.css.map",
+    "main.a2bbd005.js.map": "/todolist-dimych/static/js/main.a2bbd005.js.map",
+    "453.b8d62a29.chunk.js.map": "/todolist-dimych/static/js/453.b8d62a29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbb55728.css",
+    "static/js/main.a2bbd005.js"
+  ]
+}
