@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export type FilterValuesType = "all" | "active" | "completed"
 
-type todoListType = {
+export type TodoListType = {
     id: string
     title: string
     filter: FilterValuesType
@@ -20,29 +20,29 @@ type TasksStateType = {
 
 function App() {
 
-    const todoListId1 = v1()
-    const todoListId2 = v1()
+    const todolistId1 = v1()
+    const todolistId2 = v1()
 
     const [tasks, setTasks] = useState<TasksStateType>({
-        [todoListId1]: [
+        [todolistId1]: [
             {id: v1(), title: "CSS", isDone: true},
             {id: v1(), title: "JS", isDone: true},
             {id: v1(), title: "React", isDone: false},
             {id: v1(), title: "Redux", isDone: false},
         ],
-        [todoListId2]: [
+        [todolistId2]: [
             {id: v1(), title: "Book", isDone: false},
             {id: v1(), title: "Milk", isDone: true},
         ],
     })
 
-    const [todoLists, setTodoLists] = useState<todoListType[]>([
-        {id: todoListId1, title: "What to learn", filter: "all"},
-        {id: todoListId2, title: "What to buy", filter: "all"},
+    const [todoLists, setTodoLists] = useState<TodoListType[]>([
+        {id: todolistId1, title: "What to learn", filter: "all"},
+        {id: todolistId2, title: "What to buy", filter: "all"},
     ])
 
     function addTodoList(title: string) {
-        const newTodoList: todoListType = {
+        const newTodoList: TodoListType = {
             id: v1(),
             title: title,
             filter: "all"
